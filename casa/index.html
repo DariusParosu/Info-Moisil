@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="ro">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titlu</title>
+    <link rel="stylesheet" href="Styles/calculatorEmisiiCasa.css">
+</head>
+<body>
+    <h1>Calculator emisii casa</h1>
+    
+    <p>Electricitate: </p>
+    <input type="number" id="js_electricitate">
+    <p>KWh</p>
 
+    <p>Gaz natural</p>
+    <input type="number" id="js_gaz_natural">
+    <p>KWh</p>
+
+    <p>Propan: </p>
+    <input type="number" id="js_propan">
+    <p>kg</p>
+
+    <p>Paleti de lemn: </p>
+    <input type="number" id="js_paleti_lemn">
+    <p>kg</p>
+
+    <button onclick="CalculeazaTotalul()">Calculeaza</button>
+
+    <p id="js_rezultat"></p>
+    
+    <script src="Scripts/calculatorEmisiiCasa.js"></script>
+</body>
+</html>
