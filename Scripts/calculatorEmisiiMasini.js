@@ -47,17 +47,17 @@ function MileInKilometri(distanta) {
 }
 
 function EmisiigKm(distanta, eficienta) {
-  let emisii = distanta * eficienta;
-  document.querySelector('.js_rezultat').innerHTML = `${emisii / 1000000} tone de CO2`;
+  let emisii = (distanta * eficienta).toFixed(2);;
+  document.querySelector('.js_rezultat').innerHTML = `${emisii / 1000}kg de CO2`;
 }
 
 function Emisiil100km(distanta, eficienta, conversie) {
-  let emisii = eficienta * conversie * distanta;
-  document.querySelector('.js_rezultat').innerHTML = `${emisii / 1000000} tone de CO2`;
+  let emisii = (eficienta * conversie * distanta).toFixed(2);;
+  document.querySelector('.js_rezultat').innerHTML = `${emisii / 1000}kg de CO2`;
 }
 
 function EmisiiKWh100km(distanta, eficienta) {
-  let KWh = eficienta * 100 * distanta;
-  let emisii = KWh * CO2perKWh;
-  document.querySelector('.js_rezultat').innerHTML = `${emisii / 1000000} tone de CO2`;
+  let KWh = eficienta / 100 * distanta;
+  let emisii = (KWh * CO2perKWh).toFixed(2);
+  document.querySelector('.js_rezultat').innerHTML = `${emisii / 1000}kg de CO2`;
 }
