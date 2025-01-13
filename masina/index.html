@@ -1,7 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>OpenLayers Demo</title>
+<head lang="ro">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emisii Transport</title>
+    <link rel="stylesheet" href="Styles/calculatorEmisiiMasini.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
@@ -17,8 +20,9 @@
         width: 600px;
       }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+    <h1>Calculator emisii masini</h1>
     <div class="masina-emisii-content">
       
 
@@ -107,5 +111,25 @@
         map.on('click', onMapClick);
     </script>
     </div>
-  </body>
+    <p>Distanta: </p>
+    <input type="text" id="js_distanta">
+    <select id="js_unitate">
+        <option value="km">km</option>
+        <option value="mile">mile</option>
+    </select>
+    <p>Eficienta: </p>
+    <input type="number" id="js_eficienta">
+    <select id="js_tip_eficienta">
+        <option value="g/km">g/km</option>
+        <option value="L/100km">L/100km</option>
+    </select>
+    <select id="js_tip_combustibil">
+        <option value="benzina">benzina</option>
+        <option value="motorina">motorina</option>
+        <option value="electric">electric</option>
+    </select>
+    <button onclick="CalculeazaTotalul();">Calculeaza</button>
+    <p class="js_rezultat"></p>
+    <script src="Scripts/calculatorEmisiiMasini.js"></script>
+</body>
 </html>
