@@ -4,13 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>titlu</title>
     <link rel="stylesheet" href="../Styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><button onclick="scrollToSection('about')">Despre Noi</button></li>
-                <li><button onclick="scrollToSection('news')">Funcționalitate</button></li>
+                <li><button onclick="scrollToSection('function')">Funcționalitate</button></li>
             </ul>
         </nav>
     </header>
@@ -20,6 +21,69 @@
     </main>
 
     
+    
+    <div class="card-container">
+    <div class="card">
+        <i class="fas fa-home"></i>
+        Emisii casnice
+      </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <i class="fas fa-car"></i>
+            Emisii transport
+          </div>
+        </div>
+
+
+    <section id="about" class="info-section">
+        <h2>Despre Noi</h2>
+        <div class="content-box">
+           <ul>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+           </ul>
+        </div>
+    </section>
+
+    <section id="function" class="info-section">
+        <h2>Funcționalitate</h2>
+        <div class="content-box">
+            <ul>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+    </script>
 
     
 
